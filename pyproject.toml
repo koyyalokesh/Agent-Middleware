@@ -1,0 +1,24 @@
+[project]
+name = "agent-middleware"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "koyyalokesh", email = "koyyalokesh9@example.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.1",
+    "langchain-openai>=1.6.2",
+    "langgraph>=1.2.11",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+agent-middleware = "agent_middleware:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
